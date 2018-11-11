@@ -1,11 +1,7 @@
-class HelloWorld {
-  message = 'Hello World';
-  print = () => this.message;
-}
+import initialData from './components/DataTest';
+import Table from './components/DataTables';
 
-const hello = new HelloWorld();
-// eslint-disable-next-line no-console
-console.log(
-  `%c ${hello.print()}`,
-  `color: green; font-size:48px; weight: bold`,
-);
+let table = new Table(initialData);
+window.addEventListener('load', () => {
+  table;
+});
