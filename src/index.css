@@ -7,3 +7,100 @@ html {
 *::before {
   box-sizing: inherit;
 }
+
+.container {
+  margin: 80px;
+}
+
+.searchForm {
+  float: right;
+}
+.search {
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 2px;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-bottom: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+tbody tr:hover {
+  background: #eeeeee;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+th {
+  font-weight: bold;
+  overflow: hidden;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid black;
+}
+
+th a {
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+td {
+  overflow: hidden;
+  text-align: left;
+  padding: 6px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.pagination {
+  float: right;
+  margin: 30px;
+}
+
+.pagination a {
+  display: inline-block;
+  color: black;
+
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.pagination a.active {
+  background-color: whitesmoke;
+  border: 1px solid grey;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #f9f9f9;
+  border: 1px solid grey;
+}
+
+a.sort-by::before,
+a.sort-by::after {
+  border: 6px solid transparent;
+  content: "";
+  display: block;
+  right: 5px;
+  top: 50%;
+  position: absolute;
+}
+
+a.sort-by::before {
+  border-bottom-color: #dddddd;
+  margin-top: -13px;
+}
+
+a.sort-by::after {
+  border-top-color: #dddddd;
+  margin-top: 1px;
+}
